@@ -1,0 +1,172 @@
+@import "tailwindcss/theme.css" layer(theme);
+@import "tailwindcss/preflight.css" layer(base);
+@import "tailwindcss/utilities.css";
+
+@import "nativewind/theme";
+
+/* Scan home and onboarding route classes during the Tailwind build. */
+@source "./src";
+
+@theme {
+  --color-lingua-purple: #6c4ef5;
+  --color-lingua-deep-purple: #5b38f6;
+  --color-lingua-blue: #4d8bff;
+  --color-lingua-green: #21c16b;
+  --color-lingua-success: #21c16b;
+  --color-lingua-warning: #ffc800;
+  --color-lingua-streak: #ff8a00;
+  --color-lingua-error: #ff4d4f;
+  --color-lingua-info: #4d8bff;
+  --color-lingua-text: #0d1328;
+  --color-lingua-secondary: #6b7280;
+  --color-lingua-border: #e5e7eb;
+  --color-lingua-surface: #f5f7fb;
+  --color-lingua-background: #ffffff;
+
+  --font-poppins: "Poppins-Regular";
+  --font-poppins-medium: "Poppins-Medium";
+  --font-poppins-semibold: "Poppins-SemiBold";
+  --font-poppins-bold: "Poppins-Bold";
+}
+
+.ds-page {
+  min-height: 100%;
+  background-color: #f8f8f8;
+  padding: 24px;
+}
+
+.ds-grid {
+  width: 100%;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.ds-column {
+  width: 100%;
+  gap: 18px;
+}
+
+.ds-card {
+  width: 100%;
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 16px;
+  shadow-color: #0d1328;
+  shadow-offset: 0px 2px;
+  shadow-opacity: 0.035;
+  shadow-radius: 8px;
+  elevation: 1;
+}
+
+.ds-section-title {
+  height: 34px;
+  justify-content: center;
+  border-bottom-width: 1px;
+  border-bottom-color: #e5e7eb;
+  margin-bottom: 16px;
+  padding-left: 2px;
+  font-size: 16px;
+  line-height: 22px;
+  font-family: "Poppins-Bold";
+  color: #6040f8;
+  text-transform: uppercase;
+}
+
+.ds-brand-row {
+  flex-direction: row;
+  align-items: center;
+  padding: 20px 0 18px;
+}
+
+.ds-brand-logo {
+  width: 96px;
+  height: 96px;
+  margin-right: 8px;
+}
+
+.ds-brand-name {
+  font-family: "Poppins-Bold";
+  font-size: 42px;
+  line-height: 50px;
+  color: #0d1328;
+}
+
+.ds-swatch-grid {
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 28px 18px;
+}
+
+.ds-swatch {
+  align-items: flex-start;
+  width: 82px;
+}
+
+.ds-swatch-square {
+  width: 82px;
+  height: 68px;
+  border-radius: 8px;
+  margin-bottom: 8px;
+}
+
+.ds-swatch-name {
+  font-family: "Poppins-Regular";
+  font-size: 9px;
+  line-height: 12px;
+  color: #6b7280;
+  text-transform: uppercase;
+}
+
+.ds-swatch-hex {
+  font-family: "Poppins-Regular";
+  font-size: 9px;
+  line-height: 12px;
+  color: #6b7280;
+}
+
+.ds-type-row {
+  height: 56px;
+  flex-direction: row;
+  align-items: center;
+}
+
+.ds-type-name {
+  width: 136px;
+  font-family: "Poppins-Regular";
+  color: #0d1328;
+}
+
+.ds-type-description {
+  flex: 1;
+  font-family: "Poppins-Regular";
+  color: #6b7280;
+  font-size: 11px;
+  line-height: 14px;
+}
+
+.ds-type-meta {
+  width: 90px;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: 8px;
+  font-family: "Poppins-Regular";
+  color: #6b7280;
+  font-size: 10px;
+  line-height: 14px;
+}
+
+@media (min-width: 768px) {
+  .ds-page {
+    padding: 24px 48px;
+  }
+
+  .ds-grid {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 32px;
+  }
+
+  .ds-column {
+    width: 50%;
+  }
+}

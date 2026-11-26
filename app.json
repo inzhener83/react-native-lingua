@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "duolingo-clone",
-    "slug": "duolingo-clone",
+    "name": "Lingua",
+    "slug": "lingua",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
@@ -25,6 +25,17 @@
     },
     "plugins": [
       "expo-router",
+      [
+        "expo-font",
+        {
+          "fonts": [
+            "./assets/fonts/Poppins-Regular.ttf",
+            "./assets/fonts/Poppins-Medium.ttf",
+            "./assets/fonts/Poppins-SemiBold.ttf",
+            "./assets/fonts/Poppins-Bold.ttf"
+          ]
+        }
+      ],
       [
         "expo-splash-screen",
         {

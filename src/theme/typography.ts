@@ -1,0 +1,28 @@
+export const typography = {
+  fontFamily: {
+    regular: "Poppins-Regular",
+    medium: "Poppins-Medium",
+    semiBold: "Poppins-SemiBold",
+    bold: "Poppins-Bold",
+  },
+  fontSize: {
+    h1: 32,
+    h2: 24,
+    h3: 20,
+    h4: 16,
+    bodyLarge: 16,
+    bodyMedium: 14,
+    bodySmall: 13,
+    caption: 11,
+  },
+  lineHeight: {
+    h1: 38,
+    h2: 31,
+    h3: 26,
+    h4: 22,
+    bodyLarge: 26,
+    bodyMedium: 22,
+    bodySmall: 21,
+    caption: 15,
+  },
+} as const;
