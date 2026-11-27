@@ -10,6 +10,8 @@ An Expo and React Native language-learning app. The current build includes a Lin
 
 ## Checks
 
+Run these commands from the project root after installing dependencies.
+
 - `npx expo lint`
 - `npx tsc --noEmit`
 
